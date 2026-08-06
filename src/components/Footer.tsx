@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, GitBranch, Globe } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
@@ -16,24 +16,35 @@ export const Footer: React.FC = () => {
           <span className="text-neutral-700 font-medium">imgwho AI 作品集</span>
         </div>
 
-        {/* 中间实时运行状态 */}
+        {/* 中间在线部署链接 */}
         <div className="flex items-center space-x-2 rounded-full border border-neutral-200 bg-neutral-50 px-3 py-1 text-neutral-700">
           <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span>包含 182 个项目案例并实时同步</span>
+          <span>GitHub Pages 在线运行中</span>
         </div>
 
-        {/* 右侧导航 */}
-        <div className="flex items-center space-x-4">
+        {/* 右侧导航与链接 */}
+        <div className="flex flex-wrap items-center gap-4">
           <a
-            href="file:///C:/Users/imgwho/Desktop/projects/PROJECTS_INDEX.md"
+            href="https://imgwho.github.io/projects-showroom/"
+            target="_blank"
+            rel="noreferrer"
+            className="hover:text-black transition-colors flex items-center gap-1 font-semibold text-neutral-900"
+          >
+            <Globe className="h-3.5 w-3.5" />
+            <span>GitHub Pages 站点</span>
+            <ArrowUpRight className="h-3 w-3" />
+          </a>
+
+          <a
+            href="https://github.com/imgwho/projects-showroom"
             target="_blank"
             rel="noreferrer"
             className="hover:text-black transition-colors flex items-center gap-1 font-semibold text-neutral-700"
           >
-            <span>PROJECTS_INDEX.md 文档</span>
+            <GitBranch className="h-3.5 w-3.5" />
+            <span>开源仓库</span>
             <ArrowUpRight className="h-3 w-3" />
           </a>
-          <span>© 2026 Antigravity AI</span>
         </div>
 
       </div>
