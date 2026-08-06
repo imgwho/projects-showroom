@@ -1,7 +1,7 @@
-// 自动生成的作品集数据层 (已修正分类归属)
+// 自动生成的作品集数据层 (新增跨境电商与海外业务分类)
 
 export type AIDepth = 'native' | 'accelerated' | 'assisted';
-export type CategoryKey = 'all' | 'flagships' | 'ai-agents' | 'data-bi' | 'saas-web' | 'automation-utils' | 'ski-domain';
+export type CategoryKey = 'all' | 'flagships' | 'ai-agents' | 'cross-border-ec' | 'data-bi' | 'saas-web' | 'automation-utils' | 'ski-domain';
 
 export interface ProjectItem {
   id: string;
@@ -31,11 +31,12 @@ export interface LooseFileItem {
 export const CATEGORIES: { key: CategoryKey; label: string; count: number }[] = [
   { key: 'all', label: '作品集全景', count: 182 },
   { key: 'flagships', label: '核心开源项目', count: 11 },
-  { key: 'ai-agents', label: 'AI Agent 与前沿探索', count: 27 },
-  { key: 'data-bi', label: 'BI 与数据智能', count: 35 },
+  { key: 'ai-agents', label: 'AI Agent 与前沿探索', count: 20 },
+  { key: 'cross-border-ec', label: '跨境电商与海外业务', count: 15 },
+  { key: 'data-bi', label: 'BI 与数据智能', count: 31 },
   { key: 'saas-web', label: 'SaaS 与 Web 应用', count: 7 },
-  { key: 'automation-utils', label: '实用工具与自动化', count: 96 },
-  { key: 'ski-domain', label: '滑雪与垂直业务', count: 6 },
+  { key: 'automation-utils', label: '实用工具与自动化', count: 91 },
+  { key: 'ski-domain', label: '滑雪与垂直业务', count: 7 },
 ];
 
 export const STATS = {
@@ -77,20 +78,21 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20250618 重复订单",
     "name": "20250618 重复订单",
-    "displayName": "20250618 重复订单",
-    "category": "automation-utils",
-    "description": "针对 20250618 重复订单 自动化流程与数据处理场景定制开发的工程案例。",
+    "displayName": "跨境电商重复订单检测去重",
+    "category": "cross-border-ec",
+    "description": "多渠道跨国电商销售订单数据的重复项自动匹配、特征识别与去重处理工具。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "TypeScript",
-      "自动化"
+      "Python",
+      "Pandas",
+      "Order Processing"
     ],
     "stars": "4/5",
-    "highlight": "包含完整的工程源码与 3 个配置文件。",
+    "highlight": "基于多条件组合匹配判定重复订单，防止重复履约",
     "imageUrl": null,
     "fileCount": 3,
     "filesSample": [
@@ -527,20 +529,21 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20250805 tableau project sale",
     "name": "20250805 tableau project sale",
-    "displayName": "20250805 tableau project sale",
-    "category": "data-bi",
-    "description": "针对 20250805 tableau project sale 自动化流程与数据处理场景定制开发的工程案例。",
+    "displayName": "跨境 BI 交付与辅导落地页",
+    "category": "cross-border-ec",
+    "description": "Tableau 报表开发咨询、跨境企业训练营与技术辅导商业营销 Landing Page。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "TypeScript",
-      "自动化"
+      "HTML5",
+      "Tailwind CSS",
+      "JavaScript"
     ],
     "stars": "4/5",
-    "highlight": "包含完整的工程源码与 12 个配置文件。",
+    "highlight": "高转化率极简商业营销落地页",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20250805 tableau project sale/微信图片_20250805173628.jpg",
     "fileCount": 12,
     "filesSample": [
@@ -883,20 +886,21 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20250913 sql analysis",
     "name": "20250913 sql analysis",
-    "displayName": "20250913 sql analysis",
-    "category": "data-bi",
-    "description": "针对 20250913 sql analysis 自动化流程与数据处理场景定制开发的工程案例。",
+    "displayName": "电商私域销售漏斗 SQL 分析",
+    "category": "cross-border-ec",
+    "description": "针对高客单电商场景，从首次加微/触达到转化复购的完整漏斗 SQL 逻辑。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "TypeScript",
-      "自动化"
+      "SQL",
+      "PostgreSQL",
+      "Funnel BI"
     ],
     "stars": "4/5",
-    "highlight": "包含完整的工程源码与 14 个配置文件。",
+    "highlight": "精确计算每个转化环节的转化率与流失节点",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20250913 sql analysis/1757908395363_d.png",
     "fileCount": 14,
     "filesSample": [
@@ -1177,20 +1181,21 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20251106 pbip demo",
     "name": "20251106 pbip demo",
-    "displayName": "20251106 pbip demo",
-    "category": "data-bi",
-    "description": "Superstore Dashboard - Power BI PBIP Project  ## 项目概述  这是一个完整的 Power BI Desktop 项目 (PBIP)，复刻了 Tableau 的 \"Superstore KPIs\" 看板。项目使用 Power BI 的新 PBIP 格式，支持版本控制、外部编辑和协作开发。  ## 项目结构  ``` SuperstoreDashboard/ ├── SuperstoreDashboard.pbip                    # 主项目文件 ├── .gitignore                                  # Git 忽略文件 ├── SuperstoreDashboard.Report/                 # 报表定义 │   ├── definition.pbir                         # 报表定义文件 │   ├── .platform                               # 平台元数据 │   ├── .pbi",
-    "aiDepth": "assisted",
+    "displayName": "Power BI 跨国电商 Superstore 复刻",
+    "category": "cross-border-ec",
+    "description": "使用微软最新 PBIP 格式复刻 Superstore 跨国电商 KPI 仪表板，包含完整 DAX 体系。",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "TypeScript",
-      "自动化"
+      "Power BI PBIP",
+      "DAX",
+      "E-Commerce"
     ],
     "stars": "4/5",
-    "highlight": "包含完整的工程源码与 21 个配置文件。",
+    "highlight": "包含动态 KPI 卡片、利润预测与切片器联动",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20251106 pbip demo/Dashboard.png",
     "fileCount": 21,
     "filesSample": [
@@ -1260,18 +1265,17 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20251114 coze",
     "name": "20251114 coze",
-    "displayName": "Coze 扣子智能体工作流源码库",
+    "displayName": "20251114 coze",
     "category": "ai-agents",
-    "description": "收录 200+ 搭建完成的 Coze/扣子 AI Agent 智能体工作流配置与提示词模版。",
-    "aiDepth": "native",
+    "description": "针对 20251114 coze 自动化流程与数据处理场景定制开发的工程案例。",
+    "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Coze API",
-      "LLM Prompting",
-      "JSON Workflow"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
     "highlight": "包含完整的工程源码与 1 个配置文件。",
@@ -1684,18 +1688,17 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20251215-chat-analysis",
     "name": "20251215-chat-analysis",
-    "displayName": "销售对话 DeepSeek 挖掘系统",
+    "displayName": "20251215-chat-analysis",
     "category": "ai-agents",
-    "description": "使用 DeepSeek AI 自动分析私域销售聊天记录，提炼优秀成交话术与常见异议应对。",
-    "aiDepth": "native",
+    "description": "真实互动聊点发现系统  从历史聊天中发现真正引发过客户回复和持续交流的生活话题，并将真实互动证据整理为可检索、可解释的聊点库。  [在线 Dashboard](https://imgwho.github.io/20251215-chat-analysis/) · [旧版 Dashboard](https://imgwho.github.io/20251215-chat-analysis/archive/dashboard_v1/index.html) · [新版聊点报告](output_202511/v2/topics.md) · [v2 方法说明](docs/interaction-topics-v2.md)  ## 项目定位  当前主流程只使用一张聊天表：  ```text e_vdata_message_202511.csv ```  系统不预测成交，也不依赖订单、客户画像或 AI 主观效果分。它只回答一个问题：  > 哪些话题曾经引发客户真实回复，并推动了持续交流？  旧版 Hunting/Farming 多表分析仍作为兼容能力保留在 `src/chat_analysis/",
+    "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": "https://github.com/imgwho/20251215-chat-analysis",
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Python",
-      "DuckDB",
-      "DeepSeek API"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
     "highlight": "包含完整的工程源码与 29 个配置文件。",
@@ -1744,20 +1747,21 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20251217-n8n-html",
     "name": "20251217-n8n-html",
-    "displayName": "20251217-n8n-html",
-    "category": "saas-web",
-    "description": "针对 20251217-n8n-html 自动化流程与数据处理场景定制开发的工程案例。",
+    "displayName": "n8n 自动化抓取 LinkedIn 动态",
+    "category": "cross-border-ec",
+    "description": "基于 n8n 工作流定时抓取 LinkedIn 跨境账号动态更新并保存为 HTML 页面快照。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "TypeScript",
-      "自动化"
+      "n8n",
+      "HTML Snapshots",
+      "LinkedIn"
     ],
     "stars": "4/5",
-    "highlight": "包含完整的工程源码与 1 个配置文件。",
+    "highlight": "零代码自动化抓取海外社媒动态",
     "imageUrl": null,
     "fileCount": 1,
     "filesSample": [
@@ -1767,9 +1771,9 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20251218-reddit-n8n",
     "name": "20251218-reddit-n8n",
-    "displayName": "Reddit 到微信公众号 AI 流水线",
-    "category": "ai-agents",
-    "description": "n8n 工作流抓取 Reddit 爆款内容，经 DeepSeek AI 润色翻译后自动排版导出。",
+    "displayName": "Reddit 到微信公众号 AI 自动化",
+    "category": "cross-border-ec",
+    "description": "n8n 工作流抓取 Reddit 跨境社区爆款内容，经 DeepSeek AI 翻译润色后自动排版导出。",
     "aiDepth": "native",
     "githubStatus": "ready",
     "githubUrl": null,
@@ -1778,10 +1782,10 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "techStack": [
       "n8n",
       "DeepSeek API",
-      "Automation"
+      "Reddit API"
     ],
     "stars": "4/5",
-    "highlight": "包含完整的工程源码与 26 个配置文件。",
+    "highlight": "端到端实现跨国社区内容挖掘与 AI 翻译润色",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20251218-reddit-n8n/PixPin_2025-12-19_14-11-51.png",
     "fileCount": 26,
     "filesSample": [
@@ -1921,20 +1925,21 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260105-xhs-domain",
     "name": "20260105-xhs-domain",
-    "displayName": "20260105-xhs-domain",
-    "category": "ai-agents",
-    "description": "针对 20260105-xhs-domain 自动化流程与数据处理场景定制开发的工程案例。",
-    "aiDepth": "accelerated",
+    "displayName": "品牌出海域名比价与分析",
+    "category": "cross-border-ec",
+    "description": "批量查询分析适合出海品牌宣传与跨境选址的未注册域名及其价格。",
+    "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "TypeScript",
-      "自动化"
+      "Python",
+      "WHOIS API",
+      "出海域名"
     ],
     "stars": "4/5",
-    "highlight": "包含完整的工程源码与 10 个配置文件。",
+    "highlight": "自动评估高价值出海域名的注册状态",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20260105-xhs-domain/PixPin_2026-01-06_23-08-38.png",
     "fileCount": 10,
     "filesSample": [
@@ -2042,20 +2047,21 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260204-YouTubedownload",
     "name": "20260204-YouTubedownload",
-    "displayName": "20260204-YouTubedownload",
-    "category": "automation-utils",
-    "description": "针对 20260204-YouTubedownload 自动化流程与数据处理场景定制开发的工程案例。",
-    "aiDepth": "accelerated",
+    "displayName": "YouTube 跨境视频/音频提取器",
+    "category": "cross-border-ec",
+    "description": "自动化下载 YouTube 跨境音视频素材并提取字幕文本的 Python 工具。",
+    "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "TypeScript",
-      "自动化"
+      "Python",
+      "yt-dlp",
+      "FFmpeg"
     ],
     "stars": "4/5",
-    "highlight": "包含完整的工程源码与 7 个配置文件。",
+    "highlight": "支持批量下载海外视频与多语种音频提取",
     "imageUrl": null,
     "fileCount": 7,
     "filesSample": [
@@ -2302,17 +2308,17 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260309-openrouter",
     "name": "20260309-openrouter",
-    "displayName": "OpenRouter LLM 模型调用测试",
+    "displayName": "20260309-openrouter",
     "category": "ai-agents",
-    "description": "测试 OpenRouter 聚合 API 对不同大语言模型的调用时延与 Response 格式。",
-    "aiDepth": "native",
+    "description": "针对 20260309-openrouter 自动化流程与数据处理场景定制开发的工程案例。",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Python",
-      "OpenRouter API"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
     "highlight": "包含完整的工程源码与 1 个配置文件。",
@@ -2636,17 +2642,17 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260413-openclaw",
     "name": "20260413-openclaw",
-    "displayName": "OpenRouter 开源免费模型评测",
+    "displayName": "20260413-openclaw",
     "category": "ai-agents",
-    "description": "针对 OpenRouter 上多款开源与免费 AI 大模型在 Prompt 遵循和代码生成上的评测。",
-    "aiDepth": "native",
+    "description": "针对 20260413-openclaw 自动化流程与数据处理场景定制开发的工程案例。",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Python",
-      "LLM Evaluation"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
     "highlight": "包含完整的工程源码与 1 个配置文件。",
@@ -2710,19 +2716,17 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260420-jiaweiding",
     "name": "20260420-jiaweiding",
-    "displayName": "钉钉自然语言查 Tableau 机器人",
-    "category": "ai-agents",
-    "description": "基于 FastAPI 的钉钉机器人，支持用户在群里用自然语言查询 Tableau 仪表板数据。",
-    "aiDepth": "native",
+    "displayName": "20260420-jiaweiding",
+    "category": "automation-utils",
+    "description": "20260420-jiaweiding MVP  最小目标：在钉钉应用机器人中发送一句查询语句，机器人返回 Tableau 指标数据。  ## 1) 当前已实现  - 查询语句解析（支持日期区间、公司、指标） - Tableau REST 登录（PAT）与 `Query View Data` 拉取 CSV - 本地过滤并返回结果 - FastAPI 接口：`/health`、`/query` - 钉钉应用机器人 Stream 模式入口（`app/bot_stream.py`）  ## 2) 你要补的唯一关键配置  编辑 `.env`（二选一）：  ```env TABLEAU_VIEW_ID= TABLEAU_VIEW_URL=https://你的tableau地址/#/views/xxx/yyy ```  > 你可以只填 `TABLEAU_VIEW_URL`，程序会自动解析真实 `view id`。  ## 3) 本地运行  ```powershell cd C:\\Users\\imgwho\\Desktop\\projects",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
-    "mcpReady": true,
+    "mcpReady": false,
     "techStack": [
-      "Python",
-      "FastAPI",
-      "DingTalk Bot API",
-      "cwtwb"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
     "highlight": "包含完整的工程源码与 9 个配置文件。",
@@ -2743,18 +2747,17 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260421-test",
     "name": "20260421-test",
-    "displayName": "多 AI Agent 编码能力横向评测",
-    "category": "ai-agents",
-    "description": "对比 Cursor、Claude Code、Gemini CLI 等多款 AI 编程工具在复杂任务中的一次性成功率。",
-    "aiDepth": "native",
+    "displayName": "20260421-test",
+    "category": "automation-utils",
+    "description": "针对 20260421-test 自动化流程与数据处理场景定制开发的工程案例。",
+    "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "AI Evaluation",
-      "Claude Code",
-      "Cursor"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
     "highlight": "包含完整的工程源码与 10 个配置文件。",
@@ -2857,7 +2860,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "id": "20260424-linkedin",
     "name": "20260424-linkedin",
     "displayName": "20260424-linkedin",
-    "category": "automation-utils",
+    "category": "cross-border-ec",
     "description": "针对 20260424-linkedin 自动化流程与数据处理场景定制开发的工程案例。",
     "aiDepth": "accelerated",
     "githubStatus": "ready",
@@ -2879,18 +2882,17 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260427-tableau-skills",
     "name": "20260427-tableau-skills",
-    "displayName": "Tableau AI 技能架构 (Skill)",
-    "category": "ai-agents",
-    "description": "面向 Claude Code 与 Cursor 的 Tableau AI 5 阶段工作簿构建 Agent Skill。",
-    "aiDepth": "native",
+    "displayName": "20260427-tableau-skills",
+    "category": "ski-domain",
+    "description": "Tableau AI Skill  **Prompt to Product** — Build production-ready Tableau workbooks through structured AI agents.  Give your AI coding assistant a plain-text prompt describing a dashboard. Get back a valid, openable `.twb` file — complete with charts, KPI cards, filters, and the correct data source connection — ready to open in Tableau Desktop.  > **Live example:** [Superstore Annual Financial Report](https://public.tableau.com/app/profile/tomermoskov/viz/SuperstoreFinancialReport-GeneratedbyTa",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
-    "mcpReady": true,
+    "mcpReady": false,
     "techStack": [
-      "Claude Skill",
-      "XML Schema",
-      "Agent"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
     "highlight": "包含完整的工程源码与 11 个配置文件。",
@@ -2912,20 +2914,21 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260429-linkedin",
     "name": "20260429-linkedin",
-    "displayName": "20260429-linkedin",
-    "category": "automation-utils",
-    "description": "针对 20260429-linkedin 自动化流程与数据处理场景定制开发的工程案例。",
-    "aiDepth": "accelerated",
+    "displayName": "LinkedIn 跨境营销与出海策划",
+    "category": "cross-border-ec",
+    "description": "针对 LinkedIn 商业社交平台的海外品牌出海、社媒营销文案策划与思维导图。",
+    "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "TypeScript",
-      "自动化"
+      "Markdown",
+      "LinkedIn API",
+      "海外营销"
     ],
     "stars": "4/5",
-    "highlight": "包含完整的工程源码与 5 个配置文件。",
+    "highlight": "规划个人开源项目与产品的海外出海获客方案",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20260429-linkedin/20260607-linkedin-ai-bi-mindmap/ai-bi-mindmap-en-simple.drawio.png",
     "fileCount": 5,
     "filesSample": [
@@ -3204,20 +3207,21 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260604-代理风控",
     "name": "20260604-代理风控",
-    "displayName": "20260604-代理风控",
-    "category": "automation-utils",
-    "description": "针对 20260604-代理风控 自动化流程与数据处理场景定制开发的工程案例。",
+    "displayName": "跨境支付与渠道代理风控",
+    "category": "cross-border-ec",
+    "description": "针对跨境电商渠道代理商交易数据的异常风控预警、刷单特征识别与风险等级模型。",
     "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "TypeScript",
-      "自动化"
+      "Python",
+      "Pandas",
+      "风控算法"
     ],
     "stars": "4/5",
-    "highlight": "包含完整的工程源码与 6 个配置文件。",
+    "highlight": "及时识别跨境交易与代理商刷单风险",
     "imageUrl": null,
     "fileCount": 6,
     "filesSample": [
@@ -3379,18 +3383,17 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260615-tableaumcp",
     "name": "20260615-tableaumcp",
-    "displayName": "Tableau MCP 服务器协议探索",
+    "displayName": "20260615-tableaumcp",
     "category": "ai-agents",
-    "description": "探索 Tableau Model Context Protocol (MCP) 服务器实现，使 AI Agent 可直接调用 Tableau 数据。",
-    "aiDepth": "native",
+    "description": "针对 20260615-tableaumcp 自动化流程与数据处理场景定制开发的工程案例。",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": true,
     "techStack": [
-      "Python",
-      "MCP Protocol",
-      "Tableau API"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
     "highlight": "包含完整的工程源码与 1 个配置文件。",
@@ -3460,20 +3463,21 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260623-cwtwbtest",
     "name": "20260623-cwtwbtest",
-    "displayName": "20260623-cwtwbtest",
-    "category": "automation-utils",
-    "description": "针对 20260623-cwtwbtest 自动化流程与数据处理场景定制开发的工程案例。",
-    "aiDepth": "assisted",
+    "displayName": "跨境物流与供应链履约 Dashboard",
+    "category": "cross-border-ec",
+    "description": "使用 cwtwb 生成跨国物流时效、发货覆盖率与海外仓异常监控仪表板。",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "TypeScript",
-      "自动化"
+      "Python",
+      "cwtwb",
+      "Logistics BI"
     ],
     "stars": "4/5",
-    "highlight": "包含完整的工程源码与 13 个配置文件。",
+    "highlight": "代码自动化搭建跨境物流与供应链履约 Dashboard",
     "imageUrl": null,
     "fileCount": 13,
     "filesSample": [
@@ -3683,20 +3687,21 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260707_superstore_dashboard",
     "name": "20260707_superstore_dashboard",
-    "displayName": "20260707_superstore_dashboard",
-    "category": "automation-utils",
-    "description": "针对 20260707_superstore_dashboard 自动化流程与数据处理场景定制开发的工程案例。",
-    "aiDepth": "accelerated",
+    "displayName": "Superstore 跨国电商 Dashboard",
+    "category": "cross-border-ec",
+    "description": "Superstore 全球跨国零售电商销售与利润 Tableau 工作簿原型与排版方案。",
+    "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "TypeScript",
-      "自动化"
+      "Tableau Desktop",
+      "Superstore",
+      "E-Commerce BI"
     ],
     "stars": "4/5",
-    "highlight": "包含完整的工程源码与 5 个配置文件。",
+    "highlight": "经典跨国电商销售与利润分析 Dashboard",
     "imageUrl": null,
     "fileCount": 5,
     "filesSample": [
@@ -3768,20 +3773,21 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260711-tableau-manufacturing-cases",
     "name": "20260711-tableau-manufacturing-cases",
-    "displayName": "20260711-tableau-manufacturing-cases",
-    "category": "data-bi",
-    "description": "针对 20260711-tableau-manufacturing-cases 自动化流程与数据处理场景定制开发的工程案例。",
-    "aiDepth": "accelerated",
+    "displayName": "跨境供应链与制造业案例库",
+    "category": "cross-border-ec",
+    "description": "涵盖设备 OEE 监控、生产良品率与跨境供应链库存的 Tableau 实战案例集。",
+    "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "TypeScript",
-      "自动化"
+      "Tableau Desktop",
+      "Python",
+      "Supply Chain"
     ],
     "stars": "4/5",
-    "highlight": "包含完整的工程源码与 3 个配置文件。",
+    "highlight": "深入跨境供应链核心 KPI 场景的 BI 实践",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20260711-tableau-manufacturing-cases/output/images/01-日产通过-tableau-建立企业数据文化-在每个经销点实现分析普及/image-00-page.png",
     "fileCount": 3,
     "filesSample": [
@@ -3848,19 +3854,17 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260714-tableau-agent-studio-goose",
     "name": "20260714-tableau-agent-studio-goose",
-    "displayName": "Goose 开源桌面 Agent 架构探索",
+    "displayName": "20260714-tableau-agent-studio-goose",
     "category": "ai-agents",
-    "description": "Block Goose 原生开源桌面 AI 智能体客户端源码剖析与桌面端生态解构，探索离线 Tool Call 与沙盒机制。",
-    "aiDepth": "native",
+    "description": "针对 20260714-tableau-agent-studio-goose 业务场景定制开发的专有自动化与数据处理工程案例。",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": "https://github.com/aaif-goose/goose",
     "pypiStatus": null,
     "mcpReady": true,
     "techStack": [
-      "Rust",
       "TypeScript",
-      "Goose AI",
-      "MCP"
+      "自动化"
     ],
     "stars": "4/5",
     "highlight": "包含完整的工程源码与 41 个配置文件。",
@@ -3939,18 +3943,17 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260717-cwtwbtest",
     "name": "20260717-cwtwbtest",
-    "displayName": "cwtwb + Claude Code 自动建表演练",
-    "category": "ai-agents",
-    "description": "演练 Claude Code 智能体调用 cwtwb 库，实现从自然语言需求秒级生成完整 Tableau 仪表板。",
-    "aiDepth": "native",
+    "displayName": "20260717-cwtwbtest",
+    "category": "automation-utils",
+    "description": "Tableau-Claude Experiments with Tableau +Claude",
+    "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": "https://github.com/Ryan-M002/Tableau-Claude",
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Python",
-      "cwtwb",
-      "Claude Code"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
     "highlight": "包含完整的工程源码与 7 个配置文件。",
@@ -4045,18 +4048,17 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260728-loom-hermes-evaluation",
     "name": "20260728-loom-hermes-evaluation",
-    "displayName": "Hermes AI Agent 工具调用评测",
+    "displayName": "20260728-loom-hermes-evaluation",
     "category": "ai-agents",
-    "description": "Hermes AI Agent 高级工具调用能力与 Toolsets 动态系统评测，多维度衡量大模型在复杂工具调用下的准确率。",
-    "aiDepth": "native",
+    "description": "An AI agent with advanced tool-calling capabilities, featuring a flexible toolsets system for organizing and managing tools.",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": "https://github.com/NousResearch/hermes-agent",
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Python",
-      "Hermes Agent",
-      "LLM Evaluation"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
     "highlight": "包含完整的工程源码与 73 个配置文件。",
@@ -4078,18 +4080,17 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260728-loom-native-frameworks",
     "name": "20260728-loom-native-frameworks",
-    "displayName": "原生 Agent 框架对比评估 (Eino/Rig)",
+    "displayName": "20260728-loom-native-frameworks",
     "category": "ai-agents",
-    "description": "Go (Eino) 与 Rust (Rig) 原生 Agent 框架对比测试与性能评估，横向衡量高并发场景下的响应时延与开销。",
-    "aiDepth": "native",
+    "description": "针对 20260728-loom-native-frameworks 自动化流程与数据处理场景定制开发的工程案例。",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Go (Eino)",
-      "Rust (Rig)",
-      "Agent Framework"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
     "highlight": "包含完整的工程源码与 3 个配置文件。",
@@ -4165,18 +4166,17 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260730-loom-craft-evaluation",
     "name": "20260730-loom-craft-evaluation",
-    "displayName": "Craft 文档 AI Agent 工具评测",
+    "displayName": "20260730-loom-craft-evaluation",
     "category": "ai-agents",
-    "description": "面向 Craft 文档生态的类 Claude Code 智能体交互与评估，实现对结构化文档粒度级别的读写与重构。",
-    "aiDepth": "native",
+    "description": "Claude Code-like agent for Craft documents",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": "https://github.com/craft-ai-agents/craft-agents-oss",
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
       "TypeScript",
-      "Claude Code API",
-      "Craft SDK"
+      "自动化"
     ],
     "stars": "4/5",
     "highlight": "包含完整的工程源码与 18 个配置文件。",
@@ -4219,20 +4219,21 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260804-xmind",
     "name": "20260804-xmind",
-    "displayName": "20260804-xmind",
-    "category": "automation-utils",
-    "description": "针对 20260804-xmind 自动化流程与数据处理场景定制开发的工程案例。",
-    "aiDepth": "accelerated",
+    "displayName": "DukPay 跨境结账 XMind 导图",
+    "category": "cross-border-ec",
+    "description": "自动读取需求大纲，使用 Python 生成 DukPay 跨境支付与智能结账功能 XMind 导图。",
+    "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "TypeScript",
-      "自动化"
+      "Python",
+      "XMind API",
+      "DukPay"
     ],
     "stars": "4/5",
-    "highlight": "包含完整的工程源码与 6 个配置文件。",
+    "highlight": "快速将跨境支付结账需求转化为清晰的思维导图",
     "imageUrl": null,
     "fileCount": 6,
     "filesSample": [
@@ -4713,18 +4714,17 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "organized_chats",
     "name": "organized_chats",
-    "displayName": "Gemini CLI 历史会话归档索引",
+    "displayName": "organized_chats",
     "category": "ai-agents",
-    "description": "自动对 Gemini CLI 的几百个历史会话进行结构化提炼，整理出提取脚本与工程笔记。",
-    "aiDepth": "native",
+    "description": "📂 Gemini CLI 整理后聊天记录与脚本索引大盘  此目录由 AI 自动生成，收录了您所有 Gemini CLI 历史会话的结构化整理成果。每一份会话都区分了**对话记录**与**提取出的脚本文件**。  ## 🚀 整理项目列表  | 序号 | 项目分类 | 原始会话名 | 会话大小 | 提取脚本数量 | 整理后对话链接 | 脚本存放目录 | | --- | --- | --- | --- | --- | --- | --- | | 1 | **20260227-cwtwb** | `session-2026-06-07T09-41-df602ef3.jsonl` | 77308.4 KB | **572 个** | [查看对话对话](./20260227-cwtwb_2026-06-07_09-41/session_2026-06-07T09-41-df602ef3_chat.md) | [浏览脚本](./20260227-cwtwb_2026-06-07_09-41/scripts/) | | 2 | **4325da370bf9766800e04978811757bbf",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Python",
-      "JSONL",
-      "Gemini CLI"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
     "highlight": "包含完整的工程源码与 364 个配置文件。",
@@ -4746,19 +4746,17 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "podtohtml",
     "name": "podtohtml",
-    "displayName": "PodToHTML AI 网站生成引擎",
-    "category": "ai-agents",
-    "description": "根据文本 Prompt 瞬间自动生成完整网页、响应式布局与 PDF/PPT 导出引擎。",
-    "aiDepth": "native",
+    "displayName": "podtohtml",
+    "category": "saas-web",
+    "description": "AI 网站生成器  ## 1. 项目愿景  AI 网站生成器是一个强大的Web应用程序，它能将纯文本内容转换为视觉惊艳、功能齐全的单页网站。借助谷歌的Gemini Pro模型，它扮演着您专属的AI内容策略师和网页设计师的角色，在几秒钟内将您的笔记、文章或谈话稿转化为交互式的Web体验。  ## 2. 核心功能  - **即时网站创建**: 只需上传一个简单的文本文件 (`.txt`)，AI就会基于一个成熟的设计模板，为您构建一个结构完整、内容丰富的HTML网站。 - **智能内容结构化**: AI不仅仅是展示文本，它会分析内容，创建出逻辑清晰的区块、标题和引人注目的可视化图表。 - **成熟的设计哲学**: 生成的网站深受苹果和特斯拉官网极简主义和功能优先的美学启发，确保了现代化和专业的外观。 - **一键导出**: 生成的网站内置了导出控件，可以即时将整个页面或其组件导出为三种实用格式：     - **PDF**: 便于分享和归档。     - **JPG图片**: 每个内容区块都会被保存为一张独立的高质量图片。     - **PowerPoint (PPT)**: 每个内容",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": "https://github.com/imgwho/podtohtml",
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Node.js",
-      "Express",
-      "Gemini API",
-      "Puppeteer"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
     "highlight": "包含完整的工程源码与 12 个配置文件。",
@@ -5021,7 +5019,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "name": "tinyship",
     "displayName": "TinyShip SaaS 全栈启动模板",
     "category": "flagships",
-    "description": "多框架现代 SaaS 启动模板（支持 Next.js / Nuxt.js / TanStack Start）。",
+    "description": "多框架现代 SaaS 启动模板（支持 Next.js / Nuxt.js / TanStack Start），集成多支付通道。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": "https://github.com/imgwho/guagua_xhs",
