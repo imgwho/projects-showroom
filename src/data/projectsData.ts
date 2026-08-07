@@ -1,4 +1,4 @@
-// 自动生成的作品集数据层 (全新重构 7 大精细分类体系)
+// 自动生成的作品集数据层 (包含 8 个典型的跨境电商与通用架构案例)
 
 export type AIDepth = 'native' | 'accelerated' | 'assisted';
 export type CategoryKey = 'all' | 'flagships' | 'ai-agents' | 'cross-border-ec' | 'data-bi' | 'saas-web' | 'office-automation' | 'ski-domain';
@@ -30,12 +30,12 @@ export interface LooseFileItem {
 
 export const CATEGORIES: { key: CategoryKey; label: string; count: number }[] = [
   { key: 'all', label: '作品集全景', count: 182 },
-  { key: 'flagships', label: '核心开源项目', count: 11 },
-  { key: 'ai-agents', label: 'AI Agent 与前沿探索', count: 19 },
-  { key: 'cross-border-ec', label: '跨境电商与海外业务', count: 15 },
-  { key: 'data-bi', label: 'BI 与数据智能', count: 30 },
-  { key: 'saas-web', label: 'SaaS 与 Web 应用', count: 6 },
-  { key: 'office-automation', label: '办公自动化与文档工程', count: 94 },
+  { key: 'flagships', label: '核心开源项目', count: 10 },
+  { key: 'ai-agents', label: 'AI Agent 与前沿探索', count: 20 },
+  { key: 'cross-border-ec', label: '跨境电商与海外业务', count: 8 },
+  { key: 'data-bi', label: 'BI 与数据智能', count: 34 },
+  { key: 'saas-web', label: 'SaaS 与 Web 应用', count: 7 },
+  { key: 'office-automation', label: '办公自动化与文档工程', count: 96 },
   { key: 'ski-domain', label: '滑雪与垂直业务', count: 7 },
 ];
 
@@ -78,9 +78,9 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20250618 重复订单",
     "name": "20250618 重复订单",
-    "displayName": "跨境电商重复订单检测去重",
+    "displayName": "多渠道电商订单检测去重算法",
     "category": "cross-border-ec",
-    "description": "多渠道跨国电商销售订单数据的重复项自动匹配、特征识别与去重处理工具。",
+    "description": "多渠道/跨平台电商订单数据的重复项自动特征识别、归因匹配与去重处理工具。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
@@ -89,10 +89,10 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "techStack": [
       "Python",
       "Pandas",
-      "Order Processing"
+      "Deduplication"
     ],
     "stars": "4/5",
-    "highlight": "基于多条件组合匹配判定重复订单，防止重复履约",
+    "highlight": "通用多渠道订单归因与重复项匹配去重算法",
     "imageUrl": null,
     "fileCount": 3,
     "filesSample": [
@@ -227,20 +227,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20250630 word",
     "name": "20250630 word",
-    "displayName": "多 Word 文档内容批量合并工具",
+    "displayName": "20250630 word",
     "category": "office-automation",
-    "description": "批量提取成百上千份 Word 文档文字内容并统一合并导出为汇总文件。",
+    "description": "针对 20250630 word 自动化流程与数据处理场景定制开发的工程案例。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Python",
-      "python-docx"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "极大节省人工复制整理成百上千 Word 文档的时间",
+    "highlight": "包含完整的工程源码与 8 个配置文件。",
     "imageUrl": null,
     "fileCount": 8,
     "filesSample": [
@@ -477,20 +477,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20250731 pdf unlock",
     "name": "20250731 pdf unlock",
-    "displayName": "PDF 复制/打印限制解除工具",
+    "displayName": "20250731 pdf unlock",
     "category": "office-automation",
-    "description": "移除 PDF 文档保护密码，恢复打印、复制与文本选择功能的 Python 工具。",
+    "description": "针对 20250731 pdf unlock 自动化流程与数据处理场景定制开发的工程案例。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Python",
-      "PyPDF2"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "快速解密受限 PDF，不损害原文档格式",
+    "highlight": "包含完整的工程源码与 4 个配置文件。",
     "imageUrl": null,
     "fileCount": 4,
     "filesSample": [
@@ -530,7 +530,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "id": "20250805 tableau project sale",
     "name": "20250805 tableau project sale",
     "displayName": "20250805 tableau project sale",
-    "category": "cross-border-ec",
+    "category": "data-bi",
     "description": "针对 20250805 tableau project sale 自动化流程与数据处理场景定制开发的工程案例。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
@@ -646,21 +646,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20250809 data fake",
     "name": "20250809 data fake",
-    "displayName": "Excel 商业数据哈希脱敏工具",
+    "displayName": "20250809 data fake",
     "category": "office-automation",
-    "description": "针对敏感客户数据（姓名、手机号、金额）的自动脱敏与哈希加密工具。",
+    "description": "针对 20250809 data fake 自动化流程与数据处理场景定制开发的工程案例。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Python",
-      "Pandas",
-      "hashlib"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "支持保留格式脱敏，保障开发测试数据安全",
+    "highlight": "包含完整的工程源码与 7 个配置文件。",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20250809 data fake/PixPin_2025-08-09_15-29-48.png",
     "fileCount": 7,
     "filesSample": [
@@ -886,21 +885,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20250913 sql analysis",
     "name": "20250913 sql analysis",
-    "displayName": "电商私域销售漏斗 SQL 分析",
-    "category": "cross-border-ec",
-    "description": "针对高客单电商场景，从首次加微/触达到转化复购的完整漏斗 SQL 逻辑。",
+    "displayName": "20250913 sql analysis",
+    "category": "data-bi",
+    "description": "针对 20250913 sql analysis 自动化流程与数据处理场景定制开发的工程案例。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "SQL",
-      "PostgreSQL",
-      "Funnel BI"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "精确计算每个转化环节的转化率与流失节点",
+    "highlight": "包含完整的工程源码与 14 个配置文件。",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20250913 sql analysis/1757908395363_d.png",
     "fileCount": 14,
     "filesSample": [
@@ -1028,21 +1026,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20251031 download excel img",
     "name": "20251031 download excel img",
-    "displayName": "Excel 图片批量并发下载器",
+    "displayName": "20251031 download excel img",
     "category": "office-automation",
-    "description": "读取 Excel 中的图片 URL 列表，并发自动下载保存至本地指定目录。",
+    "description": "针对 20251031 download excel img 自动化流程与数据处理场景定制开发的工程案例。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Python",
-      "requests",
-      "ThreadPoolExecutor"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "支持多线程并发下载与失败重试策略",
+    "highlight": "包含完整的工程源码与 17 个配置文件。",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20251031 download excel img/images/11.png",
     "fileCount": 17,
     "filesSample": [
@@ -1061,22 +1058,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20251031 音频压缩",
     "name": "20251031 音频压缩",
-    "displayName": "MP3/音频高压缩客户端 (Wails)",
+    "displayName": "20251031 音频压缩",
     "category": "office-automation",
-    "description": "基于 Go + Wails + FFmpeg 打造的高保真 MP3/音频桌面压缩工具。",
-    "aiDepth": "accelerated",
+    "description": "针对 20251031 音频压缩 自动化流程与数据处理场景定制开发的工程案例。",
+    "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Go",
-      "Wails",
-      "Vue 3",
-      "FFmpeg"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "极小内存占用，一键将音频压缩 70%",
+    "highlight": "包含完整的工程源码与 11 个配置文件。",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20251031 音频压缩/mp3-compressor-wails/build/appicon.png",
     "fileCount": 11,
     "filesSample": [
@@ -1095,21 +1090,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20251104 emltodocx",
     "name": "20251104 emltodocx",
-    "displayName": ".eml 邮件转 Word 文档归档工具",
+    "displayName": "20251104 emltodocx",
     "category": "office-automation",
-    "description": "解析 .eml 邮件正文、发件人与附件，自动排版输出为 Word (.docx) 文档。",
+    "description": "针对 20251104 emltodocx 自动化流程与数据处理场景定制开发的工程案例。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Python",
-      "python-docx",
-      "Email Parser"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "批量转化邮件为可打印编辑的 Word 归档",
+    "highlight": "包含完整的工程源码与 3 个配置文件。",
     "imageUrl": null,
     "fileCount": 3,
     "filesSample": [
@@ -1185,21 +1179,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20251106 pbip demo",
     "name": "20251106 pbip demo",
-    "displayName": "Power BI 跨国电商 Superstore 复刻",
-    "category": "cross-border-ec",
-    "description": "使用微软最新 PBIP 格式复刻 Superstore 跨国电商 KPI 仪表板，包含完整 DAX 体系。",
-    "aiDepth": "accelerated",
+    "displayName": "20251106 pbip demo",
+    "category": "data-bi",
+    "description": "Superstore Dashboard - Power BI PBIP Project  ## 项目概述  这是一个完整的 Power BI Desktop 项目 (PBIP)，复刻了 Tableau 的 \"Superstore KPIs\" 看板。项目使用 Power BI 的新 PBIP 格式，支持版本控制、外部编辑和协作开发。  ## 项目结构  ``` SuperstoreDashboard/ ├── SuperstoreDashboard.pbip                    # 主项目文件 ├── .gitignore                                  # Git 忽略文件 ├── SuperstoreDashboard.Report/                 # 报表定义 │   ├── definition.pbir                         # 报表定义文件 │   ├── .platform                               # 平台元数据 │   ├── .pbi",
+    "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Power BI PBIP",
-      "DAX",
-      "E-Commerce"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "包含动态 KPI 卡片、利润预测与切片器联动",
+    "highlight": "包含完整的工程源码与 21 个配置文件。",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20251106 pbip demo/Dashboard.png",
     "fileCount": 21,
     "filesSample": [
@@ -1386,21 +1379,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20251122 excel split",
     "name": "20251122 excel split",
-    "displayName": "Excel 分公司大表自动拆分器",
+    "displayName": "20251122 excel split",
     "category": "office-automation",
-    "description": "基于 Go + Excelize 开发的按部门/分公司一键拆分几十万行 Excel 大表工具。",
-    "aiDepth": "accelerated",
+    "description": "Excel分公司拆分工具 - 网页版  ## 🚀 功能特点 - **纯前端处理**：无需服务器，直接在浏览器中运行 - **拖拽上传**：支持拖拽文件或点击选择 - **分公司拆分**：按第5列（分公司）将数据拆分成多个独立Excel文件 - **批量下载**：可以单独下载每个分公司文件，或打包下载所有文件 - **中文支持**：完美支持中文分公司名称 - **进度显示**：实时显示处理进度  ## 📋 使用方法  ### 1. 打开网页 双击 `index.html` 文件，或在浏览器中打开  ### 2. 上传Excel文件 - **拖拽上传**：将Excel文件拖拽到上传区域 - **点击上传**：点击\"选择文件\"按钮选择Excel文件  ### 3. 等待处理 - 程序会自动读取Sheet2中的数据 - 按分公司分组数据 - 显示处理进度和分公司列表  ### 4. 下载结果 - **单独下载**：点击每个分公司对应的下载按钮 - **打包下载**：点击\"打包下载所有文件\"按钮  ## 📁 文件结构 ``` excel-split-web/ ├── index.html",
+    "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Go",
-      "Excelize",
-      "Excel 自动化"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "毫秒级完成几十万行大表格的拆分导出",
+    "highlight": "包含完整的工程源码与 16 个配置文件。",
     "imageUrl": null,
     "fileCount": 16,
     "filesSample": [
@@ -1665,21 +1657,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20251213-markitdown",
     "name": "20251213-markitdown",
-    "displayName": "MarkItDown 多格式转 Markdown",
+    "displayName": "20251213-markitdown",
     "category": "office-automation",
-    "description": "利用微软 MarkItDown 引擎，将 PDF、Word、Excel 极速转换为 Markdown 格式。",
-    "aiDepth": "accelerated",
+    "description": "针对 20251213-markitdown 自动化流程与数据处理场景定制开发的工程案例。",
+    "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Python",
-      "markitdown",
-      "CLI"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "高质量保留原有表格结构，方便 AI 知识库读取",
+    "highlight": "包含完整的工程源码与 6 个配置文件。",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20251213-markitdown/.venv/Lib/site-packages/sympy/plotting/tests/test_region_and.png",
     "fileCount": 6,
     "filesSample": [
@@ -1726,20 +1717,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20251217-html2pdf",
     "name": "20251217-html2pdf",
-    "displayName": "HTML 演示文稿 Chrome 转 PDF",
+    "displayName": "20251217-html2pdf",
     "category": "office-automation",
-    "description": "使用无头 Chrome 精准将单页 HTML 演示文稿导出为高保真 PDF 矢量文件。",
+    "description": "HTML 到 PDF 转换说明文档  ## 目的  本文档详细说明了如何将 `1.html` 文件转换为满足以下要求的 PDF 文档： 1.  **每个模块单独一页**：HTML 中每个 `.slide-container` 元素在 PDF 中占据独立的一页。 2.  **页面尺寸适配**：PDF 页面尺寸与幻灯片内容（1280px x 720px）完美匹配，避免内容缩放或“太窄”的问题。 3.  **无页眉页脚**：PDF 页面底部不会出现文件路径、日期等信息。 4.  **代码无滚动条**：对包含代码的特定页面（第 5、9、10 页）调整字体大小，确保代码在页面内完整显示，不出现滚动条。  ## 使用工具  本次转换主要使用了 Google Chrome 浏览器的无头模式 (Headless Mode) 进行 PDF 打印，并通过 PowerShell 执行命令。HTML/CSS 修改通过文本替换工具完成。  ## 转换步骤及命令  以下是完成上述目标所执行的关键步骤和命令：  ### 1. 初始 HTML 文件 (`1.html`)  原始 HTML 文件位于项目根目录：`C",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "PowerShell",
-      "Chrome Headless"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "保持像素级精度的矢量 PDF 导出",
+    "highlight": "包含完整的工程源码与 5 个配置文件。",
     "imageUrl": null,
     "fileCount": 5,
     "filesSample": [
@@ -1753,21 +1744,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20251217-n8n-html",
     "name": "20251217-n8n-html",
-    "displayName": "n8n 自动化抓取 LinkedIn 动态",
-    "category": "cross-border-ec",
-    "description": "基于 n8n 工作流定时抓取 LinkedIn 跨境账号动态更新并保存为 HTML 页面快照。",
+    "displayName": "20251217-n8n-html",
+    "category": "saas-web",
+    "description": "针对 20251217-n8n-html 自动化流程与数据处理场景定制开发的工程案例。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "n8n",
-      "HTML Snapshots",
-      "LinkedIn"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "零代码自动化抓取海外社媒动态",
+    "highlight": "包含完整的工程源码与 1 个配置文件。",
     "imageUrl": null,
     "fileCount": 1,
     "filesSample": [
@@ -1777,9 +1767,9 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20251218-reddit-n8n",
     "name": "20251218-reddit-n8n",
-    "displayName": "Reddit 到微信公众号 AI 自动化",
+    "displayName": "Reddit 到微信公众号 AI 翻译流水线",
     "category": "cross-border-ec",
-    "description": "n8n 工作流抓取 Reddit 跨境社区爆款内容，经 DeepSeek AI 翻译润色后自动排版导出。",
+    "description": "n8n 工作流抓取 Reddit 海外社区爆款内容，经 DeepSeek AI 翻译润色后自动排版导出。",
     "aiDepth": "native",
     "githubStatus": "ready",
     "githubUrl": null,
@@ -1788,10 +1778,10 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "techStack": [
       "n8n",
       "DeepSeek API",
-      "Reddit API"
+      "i18n Translation"
     ],
     "stars": "4/5",
-    "highlight": "端到端实现跨国社区内容挖掘与 AI 翻译润色",
+    "highlight": "通用跨国社区数据抓取与 AI 自动化翻译润色",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20251218-reddit-n8n/PixPin_2025-12-19_14-11-51.png",
     "fileCount": 26,
     "filesSample": [
@@ -1931,21 +1921,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260105-xhs-domain",
     "name": "20260105-xhs-domain",
-    "displayName": "品牌出海域名比价与分析",
-    "category": "cross-border-ec",
-    "description": "批量查询分析适合出海品牌宣传与跨境选址的未注册域名及其价格。",
-    "aiDepth": "assisted",
+    "displayName": "20260105-xhs-domain",
+    "category": "ai-agents",
+    "description": "针对 20260105-xhs-domain 自动化流程与数据处理场景定制开发的工程案例。",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Python",
-      "WHOIS API",
-      "出海域名"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "自动评估高价值出海域名的注册状态",
+    "highlight": "包含完整的工程源码与 10 个配置文件。",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20260105-xhs-domain/PixPin_2026-01-06_23-08-38.png",
     "fileCount": 10,
     "filesSample": [
@@ -2053,21 +2042,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260204-YouTubedownload",
     "name": "20260204-YouTubedownload",
-    "displayName": "YouTube 跨境视频/音频提取器",
-    "category": "cross-border-ec",
-    "description": "自动化下载 YouTube 跨境音视频素材并提取字幕文本的 Python 工具。",
-    "aiDepth": "assisted",
+    "displayName": "20260204-YouTubedownload",
+    "category": "office-automation",
+    "description": "针对 20260204-YouTubedownload 自动化流程与数据处理场景定制开发的工程案例。",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Python",
-      "yt-dlp",
-      "FFmpeg"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "支持批量下载海外视频与多语种音频提取",
+    "highlight": "包含完整的工程源码与 7 个配置文件。",
     "imageUrl": null,
     "fileCount": 7,
     "filesSample": [
@@ -2616,21 +2604,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260406-autoexcel",
     "name": "20260406-autoexcel",
-    "displayName": "Excel 自动化宏与统计公式插入器",
+    "displayName": "20260406-autoexcel",
     "category": "office-automation",
-    "description": "基于 Go 开发的 Excel 自动化工具，批量插入统计公式与宏计算规则。",
+    "description": "针对 20260406-autoexcel 自动化流程与数据处理场景定制开发的工程案例。",
     "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Go",
-      "VBA",
-      "Excelize"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "大幅提升财务/运营大表格处理效率",
+    "highlight": "包含完整的工程源码与 12 个配置文件。",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20260406-autoexcel/tools-hub/public/favicon.svg",
     "fileCount": 12,
     "filesSample": [
@@ -2672,20 +2659,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260417-videocut",
     "name": "20260417-videocut",
-    "displayName": "FFmpeg 视频裁剪与变速工具",
+    "displayName": "20260417-videocut",
     "category": "office-automation",
-    "description": "快速对演示视频进行无损裁剪、画面旋转与变速处理的命令行工具。",
-    "aiDepth": "assisted",
+    "description": "针对 20260417-videocut 自动化流程与数据处理场景定制开发的工程案例。",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "FFmpeg",
-      "Shell"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "免重编码快速导出高清视频片段",
+    "highlight": "包含完整的工程源码与 3 个配置文件。",
     "imageUrl": null,
     "fileCount": 3,
     "filesSample": [
@@ -2811,21 +2798,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260423-clipvideo",
     "name": "20260423-clipvideo",
-    "displayName": "视频平滑转场片段生成器",
+    "displayName": "20260423-clipvideo",
     "category": "office-automation",
-    "description": "基于 MoviePy 自动为演示视频素材添加平滑淡入淡出与自定义文字过渡。",
-    "aiDepth": "assisted",
+    "description": "针对 20260423-clipvideo 自动化流程与数据处理场景定制开发的工程案例。",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Python",
-      "MoviePy",
-      "FFmpeg"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "自动化视频后期处理",
+    "highlight": "包含完整的工程源码与 6 个配置文件。",
     "imageUrl": null,
     "fileCount": 6,
     "filesSample": [
@@ -2840,20 +2826,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260423-excel-split",
     "name": "20260423-excel-split",
-    "displayName": "Excel 手机号提取去重与规范化",
+    "displayName": "20260423-excel-split",
     "category": "office-automation",
-    "description": "快速从复杂 Excel 表格中识别并提取有效手机号，进行去重和规范化输出。",
-    "aiDepth": "assisted",
+    "description": "针对 20260423-excel-split 自动化流程与数据处理场景定制开发的工程案例。",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Python",
-      "Pandas"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "准确过滤非标准号码，提高名单质量",
+    "highlight": "包含完整的工程源码与 5 个配置文件。",
     "imageUrl": null,
     "fileCount": 5,
     "filesSample": [
@@ -2868,7 +2854,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "id": "20260424-linkedin",
     "name": "20260424-linkedin",
     "displayName": "20260424-linkedin",
-    "category": "cross-border-ec",
+    "category": "office-automation",
     "description": "针对 20260424-linkedin 自动化流程与数据处理场景定制开发的工程案例。",
     "aiDepth": "accelerated",
     "githubStatus": "ready",
@@ -2922,7 +2908,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260429-linkedin",
     "name": "20260429-linkedin",
-    "displayName": "LinkedIn 跨境营销与出海策划",
+    "displayName": "LinkedIn 跨境获客与出海营销",
     "category": "cross-border-ec",
     "description": "针对 LinkedIn 商业社交平台的海外品牌出海、社媒营销文案策划与思维导图。",
     "aiDepth": "assisted",
@@ -2933,10 +2919,10 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "techStack": [
       "Markdown",
       "LinkedIn API",
-      "海外营销"
+      "Outbound Marketing"
     ],
     "stars": "4/5",
-    "highlight": "规划个人开源项目与产品的海外出海获客方案",
+    "highlight": "通用海外社媒品牌出海与引流获客方案",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20260429-linkedin/20260607-linkedin-ai-bi-mindmap/ai-bi-mindmap-en-simple.drawio.png",
     "fileCount": 5,
     "filesSample": [
@@ -3226,10 +3212,10 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "techStack": [
       "Python",
       "Pandas",
-      "风控算法"
+      "Risk Control"
     ],
     "stars": "4/5",
-    "highlight": "及时识别跨境交易与代理商刷单风险",
+    "highlight": "通用跨境交易防刷单与渠道风险判定算法",
     "imageUrl": null,
     "fileCount": 6,
     "filesSample": [
@@ -3473,7 +3459,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "name": "20260623-cwtwbtest",
     "displayName": "跨境物流与供应链履约 Dashboard",
     "category": "cross-border-ec",
-    "description": "使用 cwtwb 生成跨国物流时效、发货覆盖率与海外仓异常监控仪表板。",
+    "description": "使用 cwtwb 生成跨国物流履约时效、海外仓库存覆盖率与供应链异常监控仪表板。",
     "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
@@ -3485,7 +3471,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
       "Logistics BI"
     ],
     "stars": "4/5",
-    "highlight": "代码自动化搭建跨境物流与供应链履约 Dashboard",
+    "highlight": "通用跨国物流时效与海外仓库存履约 Dashboard",
     "imageUrl": null,
     "fileCount": 13,
     "filesSample": [
@@ -3695,7 +3681,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260707_superstore_dashboard",
     "name": "20260707_superstore_dashboard",
-    "displayName": "Superstore 跨国电商 Dashboard",
+    "displayName": "Superstore 跨国零售电商 Dashboard",
     "category": "cross-border-ec",
     "description": "Superstore 全球跨国零售电商销售与利润 Tableau 工作簿原型与排版方案。",
     "aiDepth": "assisted",
@@ -3705,11 +3691,11 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "mcpReady": false,
     "techStack": [
       "Tableau Desktop",
-      "Superstore",
-      "E-Commerce BI"
+      "Superstore BI",
+      "Multi-region"
     ],
     "stars": "4/5",
-    "highlight": "经典跨国电商销售与利润分析 Dashboard",
+    "highlight": "通用全球跨国零售电商销售与利润分析看板",
     "imageUrl": null,
     "fileCount": 5,
     "filesSample": [
@@ -3781,21 +3767,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260711-tableau-manufacturing-cases",
     "name": "20260711-tableau-manufacturing-cases",
-    "displayName": "跨境供应链与制造业案例库",
-    "category": "cross-border-ec",
-    "description": "涵盖设备 OEE 监控、生产良品率与跨境供应链库存的 Tableau 实战案例集。",
-    "aiDepth": "assisted",
+    "displayName": "20260711-tableau-manufacturing-cases",
+    "category": "data-bi",
+    "description": "针对 20260711-tableau-manufacturing-cases 自动化流程与数据处理场景定制开发的工程案例。",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Tableau Desktop",
-      "Python",
-      "Supply Chain"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "深入跨境供应链核心 KPI 场景的 BI 实践",
+    "highlight": "包含完整的工程源码与 3 个配置文件。",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20260711-tableau-manufacturing-cases/output/images/01-日产通过-tableau-建立企业数据文化-在每个经销点实现分析普及/image-00-page.png",
     "fileCount": 3,
     "filesSample": [
@@ -4147,21 +4132,20 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260730-cv",
     "name": "20260730-cv",
-    "displayName": "个人履历与简历代码化生成器",
+    "displayName": "20260730-cv",
     "category": "office-automation",
-    "description": "输入履历数据，自动渲染生成高清 Word (.docx) 简历与响应式 HTML 网页。",
-    "aiDepth": "assisted",
+    "description": "针对 20260730-cv 自动化流程与数据处理场景定制开发的工程案例。",
+    "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
     "pypiStatus": null,
     "mcpReady": false,
     "techStack": [
-      "Python",
-      "python-docx",
-      "HTML5"
+      "TypeScript",
+      "自动化"
     ],
     "stars": "4/5",
-    "highlight": "支持代码化维护个人履历并多格式导出",
+    "highlight": "包含完整的工程源码与 5 个配置文件。",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20260730-cv/avatar.png",
     "fileCount": 5,
     "filesSample": [
@@ -4228,9 +4212,9 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260804-xmind",
     "name": "20260804-xmind",
-    "displayName": "DukPay 跨境结账 XMind 导图",
+    "displayName": "DukPay 跨境支付与结账导图",
     "category": "cross-border-ec",
-    "description": "自动读取需求大纲，使用 Python 生成 DukPay 跨境支付与智能结账功能 XMind 导图。",
+    "description": "自动读取需求大纲，使用 Python 生成 DukPay 跨境支付网关与多货币在线结账流程思维导图。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
@@ -4239,10 +4223,10 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "techStack": [
       "Python",
       "XMind API",
-      "DukPay"
+      "DukPay Gateway"
     ],
     "stars": "4/5",
-    "highlight": "快速将跨境支付结账需求转化为清晰的思维导图",
+    "highlight": "通用跨境在线支付网关与多货币结账流程架构",
     "imageUrl": null,
     "fileCount": 6,
     "filesSample": [
@@ -5026,9 +5010,9 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "tinyship",
     "name": "tinyship",
-    "displayName": "TinyShip SaaS 全栈启动模板",
-    "category": "flagships",
-    "description": "多框架现代 SaaS 启动模板（支持 Next.js / Nuxt.js / TanStack Start），集成 Stripe 多支付通道。",
+    "displayName": "TinyShip 全栈 SaaS 启动模板",
+    "category": "cross-border-ec",
+    "description": "多框架现代 SaaS 启动模板（支持 Next.js / Nuxt.js），预置 Stripe 跨国支付网关接入与多货币结算结算流。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": "https://github.com/imgwho/guagua_xhs",
@@ -5036,12 +5020,12 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "mcpReady": false,
     "techStack": [
       "TypeScript",
-      "Turborepo",
-      "Drizzle ORM",
-      "Stripe"
+      "Next.js",
+      "Stripe",
+      "Global Payments"
     ],
     "stars": "4/5",
-    "highlight": "集成多支付通道、多云存储与 RBAC 权限系统",
+    "highlight": "通用跨境支付网关、多币种与 RBAC 权限控制",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/tinyship/.tmp_pages/android-chrome-192x192.png",
     "fileCount": 34,
     "filesSample": [
