@@ -1,4 +1,4 @@
-// 自动生成的作品集数据层 (包含 8 个典型的跨境电商与通用架构案例)
+// 自动生成的作品集数据层 (大幅加强跨境电商 8 大典型架构案例的中文描述与亮点)
 
 export type AIDepth = 'native' | 'accelerated' | 'assisted';
 export type CategoryKey = 'all' | 'flagships' | 'ai-agents' | 'cross-border-ec' | 'data-bi' | 'saas-web' | 'office-automation' | 'ski-domain';
@@ -78,9 +78,9 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20250618 重复订单",
     "name": "20250618 重复订单",
-    "displayName": "多渠道电商订单检测去重算法",
+    "displayName": "跨国多平台订单归因与去重算法",
     "category": "cross-border-ec",
-    "description": "多渠道/跨平台电商订单数据的重复项自动特征识别、归因匹配与去重处理工具。",
+    "description": "针对 Shopify、Amazon、Shopee 等多跨国电商平台与独立站的跨平台订单归因算法，解决多 API 渠道抓取与 ERP 导入时的重复履约、多币种金额匹配与跨国订单去重问题。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
@@ -89,10 +89,11 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "techStack": [
       "Python",
       "Pandas",
-      "Deduplication"
+      "Deduplication",
+      "Cross-border ERP"
     ],
     "stars": "4/5",
-    "highlight": "通用多渠道订单归因与重复项匹配去重算法",
+    "highlight": "解决多跨国电商平台 API 联合抓取时的跨国订单重复履约风险",
     "imageUrl": null,
     "fileCount": 3,
     "filesSample": [
@@ -1769,7 +1770,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "name": "20251218-reddit-n8n",
     "displayName": "Reddit 到微信公众号 AI 翻译流水线",
     "category": "cross-border-ec",
-    "description": "n8n 工作流抓取 Reddit 海外社区爆款内容，经 DeepSeek AI 翻译润色后自动排版导出。",
+    "description": "基于 n8n 自动化抓取 Reddit 跨境卖家与海外科技社区热门帖子，调用 LLM 进行专业跨语言术语翻译、本土化语意润色并一键导出多平台排版。",
     "aiDepth": "native",
     "githubStatus": "ready",
     "githubUrl": null,
@@ -1778,10 +1779,11 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "techStack": [
       "n8n",
       "DeepSeek API",
-      "i18n Translation"
+      "i18n Translation",
+      "Reddit API"
     ],
     "stars": "4/5",
-    "highlight": "通用跨国社区数据抓取与 AI 自动化翻译润色",
+    "highlight": "自动化抓取海外跨国社区热门话题，实现 AI 专业跨语言翻译润色",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20251218-reddit-n8n/PixPin_2025-12-19_14-11-51.png",
     "fileCount": 26,
     "filesSample": [
@@ -2908,9 +2910,9 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260429-linkedin",
     "name": "20260429-linkedin",
-    "displayName": "LinkedIn 跨境获客与出海营销",
+    "displayName": "LinkedIn 跨境获客与 B2B 出海营销",
     "category": "cross-border-ec",
-    "description": "针对 LinkedIn 商业社交平台的海外品牌出海、社媒营销文案策划与思维导图。",
+    "description": "面向 B2B 出海与跨境品牌搭建的 LinkedIn 社交媒体营销方案，包含海外 Key Account 客户画像精准获客、出海文案 Prompt 引擎与内容漏斗设计。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
@@ -2922,7 +2924,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
       "Outbound Marketing"
     ],
     "stars": "4/5",
-    "highlight": "通用海外社媒品牌出海与引流获客方案",
+    "highlight": "精准构建 B2B 出海客户画像、海外社媒自动化引流与转化漏斗",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/20260429-linkedin/20260607-linkedin-ai-bi-mindmap/ai-bi-mindmap-en-simple.drawio.png",
     "fileCount": 5,
     "filesSample": [
@@ -3201,9 +3203,9 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260604-代理风控",
     "name": "20260604-代理风控",
-    "displayName": "跨境支付与渠道代理风控",
+    "displayName": "跨境支付与渠道代理风控模型",
     "category": "cross-border-ec",
-    "description": "针对跨境电商渠道代理商交易数据的异常风控预警、刷单特征识别与风险等级模型。",
+    "description": "面向出海业务与跨境支付场景的代理商交易风控模型，识别跨国 Carding 刷卡欺诈、高危 IP 代理风控、异常交易频率与洗牌刷单行为。",
     "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
@@ -3212,10 +3214,11 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "techStack": [
       "Python",
       "Pandas",
-      "Risk Control"
+      "Risk Control",
+      "Fraud Detection"
     ],
     "stars": "4/5",
-    "highlight": "通用跨境交易防刷单与渠道风险判定算法",
+    "highlight": "准确识别跨国支付欺诈、高危 IP 代理与渠道异常交易风控",
     "imageUrl": null,
     "fileCount": 6,
     "filesSample": [
@@ -3457,9 +3460,9 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260623-cwtwbtest",
     "name": "20260623-cwtwbtest",
-    "displayName": "跨境物流与供应链履约 Dashboard",
+    "displayName": "跨国物流与海外仓履约 Dashboard",
     "category": "cross-border-ec",
-    "description": "使用 cwtwb 生成跨国物流履约时效、海外仓库存覆盖率与供应链异常监控仪表板。",
+    "description": "基于 cwtwb 构建的跨国电商物流与海外仓履约控制台，可视化展现美东/美西/欧洲海外仓关务时效、清关异常率、跨国头程尾程运输费用与库存缺货预警。",
     "aiDepth": "accelerated",
     "githubStatus": "ready",
     "githubUrl": null,
@@ -3468,10 +3471,11 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "techStack": [
       "Python",
       "cwtwb",
-      "Logistics BI"
+      "Logistics BI",
+      "Supply Chain"
     ],
     "stars": "4/5",
-    "highlight": "通用跨国物流时效与海外仓库存履约 Dashboard",
+    "highlight": "全面监控海外仓头程尾程物流时效、关务异常与多区域库存履约",
     "imageUrl": null,
     "fileCount": 13,
     "filesSample": [
@@ -3683,7 +3687,7 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "name": "20260707_superstore_dashboard",
     "displayName": "Superstore 跨国零售电商 Dashboard",
     "category": "cross-border-ec",
-    "description": "Superstore 全球跨国零售电商销售与利润 Tableau 工作簿原型与排版方案。",
+    "description": "针对全球跨国零售电商场景的 Tableau 综合分析仪表板，包含北美、欧洲、亚太三大大洲多区域销售增长率、多币种利润贡献度与跨国运输折扣率分析。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
@@ -3692,10 +3696,11 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "techStack": [
       "Tableau Desktop",
       "Superstore BI",
-      "Multi-region"
+      "Multi-region",
+      "E-Commerce"
     ],
     "stars": "4/5",
-    "highlight": "通用全球跨国零售电商销售与利润分析看板",
+    "highlight": "深入分析全球三大洲多区域销售增长、多币种利润贡献与运输折扣",
     "imageUrl": null,
     "fileCount": 5,
     "filesSample": [
@@ -4212,9 +4217,9 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "20260804-xmind",
     "name": "20260804-xmind",
-    "displayName": "DukPay 跨境支付与结账导图",
+    "displayName": "DukPay 跨境支付与结账架构导图",
     "category": "cross-border-ec",
-    "description": "自动读取需求大纲，使用 Python 生成 DukPay 跨境支付网关与多货币在线结账流程思维导图。",
+    "description": "跨境独立站 DukPay 在线支付网关与多货币结账系统架构设计，自动解析需求文本并生成涵盖 PCI-DSS 合规、多币种转换、3D Secure 验证的思维导图。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": null,
@@ -4223,10 +4228,11 @@ export const PROJECTS_DATA: ProjectItem[] = [
     "techStack": [
       "Python",
       "XMind API",
-      "DukPay Gateway"
+      "DukPay Gateway",
+      "PCI-DSS"
     ],
     "stars": "4/5",
-    "highlight": "通用跨境在线支付网关与多货币结账流程架构",
+    "highlight": "图形化解构 PCI-DSS 合规、多币种动态转换与 3D Secure 跨境结账流程",
     "imageUrl": null,
     "fileCount": 6,
     "filesSample": [
@@ -5010,9 +5016,9 @@ export const PROJECTS_DATA: ProjectItem[] = [
   {
     "id": "tinyship",
     "name": "tinyship",
-    "displayName": "TinyShip 全栈 SaaS 启动模板",
+    "displayName": "TinyShip 全栈 SaaS 出海启动模板",
     "category": "cross-border-ec",
-    "description": "多框架现代 SaaS 启动模板（支持 Next.js / Nuxt.js），预置 Stripe 跨国支付网关接入与多货币结算结算流。",
+    "description": "现代出海 SaaS 全栈启动模板，集成 Stripe 跨国支付网关、支持 USD/EUR/GBP 多货币动态结算、多语言 i18n 国际化路由与全球合规 RBAC 权限。",
     "aiDepth": "assisted",
     "githubStatus": "ready",
     "githubUrl": "https://github.com/imgwho/guagua_xhs",
@@ -5022,10 +5028,11 @@ export const PROJECTS_DATA: ProjectItem[] = [
       "TypeScript",
       "Next.js",
       "Stripe",
+      "i18n",
       "Global Payments"
     ],
     "stars": "4/5",
-    "highlight": "通用跨境支付网关、多币种与 RBAC 权限控制",
+    "highlight": "预置 Stripe 跨国支付网关、多币种实时结算与多语言 i18n 出海架构",
     "imageUrl": "file:///C:/Users/imgwho/Desktop/projects/tinyship/.tmp_pages/android-chrome-192x192.png",
     "fileCount": 34,
     "filesSample": [
